@@ -1804,4 +1804,7 @@ impl<E: Engine> WitnessOracle<E> for VmWitnessOracle<E> {
             );
         }
     }
+    fn report_new_callstack_frame(&mut self, _: &ExecutionContextRecord<E>, _: sync_vm::vm::primitives::UInt32<E>, _: &sync_vm::franklin_crypto::plonk::circuit::boolean::Boolean, _: &sync_vm::franklin_crypto::plonk::circuit::boolean::Boolean) {
+    }
+
 }
